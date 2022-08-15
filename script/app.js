@@ -227,52 +227,52 @@ var textures = [
 function startGame() {
     PLATE_1.x = PLATE_1.xStart;
     PLATE_1.y = PLATE_1.yStart;
-    canvasContext.fillStyle = PLATE_1.color;
-    canvasContext.drawImage(textures[1] ,PLATE_1.x, PLATE_1.y, PLATE_1.width, PLATE_1.height);
+    //canvasContext.fillStyle = PLATE_1.color;
+    canvasContext.drawImage(textures[1], PLATE_1.x, PLATE_1.y, PLATE_1.width, PLATE_1.height);
     
     PLATE_2.x = PLATE_2.xStart;
     PLATE_2.y = PLATE_2.yStart;
-    canvasContext.fillStyle = PLATE_2.color;
+    //canvasContext.fillStyle = PLATE_2.color;
     canvasContext.drawImage(textures[2], PLATE_2.x, PLATE_2.y, PLATE_2.width, PLATE_2.height);
     
     PLATE_3.x = PLATE_3.xStart;
     PLATE_3.y = PLATE_3.yStart;
-    canvasContext.fillStyle = PLATE_3.color;
+    //canvasContext.fillStyle = PLATE_3.color;
     canvasContext.drawImage(textures[3], PLATE_3.x, PLATE_3.y, PLATE_3.width, PLATE_3.height);
 
     PLATE_4.x = PLATE_4.xStart;
     PLATE_4.y = PLATE_4.yStart;
-    canvasContext.fillStyle = PLATE_4.color;
+    //canvasContext.fillStyle = PLATE_4.color;
     canvasContext.drawImage(textures[4], PLATE_4.x, PLATE_4.y, PLATE_4.width, PLATE_4.height);
 
     PLATE_5.x = PLATE_5.xStart;
     PLATE_5.y = PLATE_5.yStart;
-    canvasContext.fillStyle = PLATE_5.color;
+    //canvasContext.fillStyle = PLATE_5.color;
     canvasContext.drawImage(textures[5], PLATE_5.x, PLATE_5.y, PLATE_5.width, PLATE_5.height);
 
     PLATE_6.x = PLATE_6.xStart;
     PLATE_6.y = PLATE_6.yStart;
-    canvasContext.fillStyle = PLATE_6.color;
+    //canvasContext.fillStyle = PLATE_6.color;
     canvasContext.drawImage(textures[6], PLATE_6.x, PLATE_6.y, PLATE_6.width, PLATE_6.height);
 
     PLATE_7.x = PLATE_7.xStart;
     PLATE_7.y = PLATE_7.yStart;
-    canvasContext.fillStyle = PLATE_7.color;
+    //canvasContext.fillStyle = PLATE_7.color;
     canvasContext.drawImage(textures[7], PLATE_7.x, PLATE_7.y, PLATE_7.width, PLATE_7.height);
 
     PLATE_8.x = PLATE_8.xStart;
     PLATE_8.y = PLATE_8.yStart;
-    canvasContext.fillStyle = PLATE_8.color;
+    //canvasContext.fillStyle = PLATE_8.color;
     canvasContext.drawImage(textures[8], PLATE_8.x, PLATE_8.y, PLATE_8.width, PLATE_8.height);
 
     PLATE_9.x = PLATE_9.xStart;
     PLATE_9.y = PLATE_9.yStart;
-    canvasContext.fillStyle = PLATE_9.color;
+    //canvasContext.fillStyle = PLATE_9.color;
     canvasContext.drawImage(textures[9], PLATE_9.x, PLATE_9.y, PLATE_9.width, PLATE_9.height);
 
     PLATE_10.x = PLATE_10.xStart;
     PLATE_10.y = PLATE_10.yStart;
-    canvasContext.fillStyle = PLATE_10.color;
+    //canvasContext.fillStyle = PLATE_10.color;
     canvasContext.drawImage(textures[10], PLATE_10.x, PLATE_10.y, PLATE_10.width, PLATE_10.height);
     
     initEventsListeners();
@@ -302,7 +302,7 @@ function moveRight(activeNumber) {
             plates[activeNumber].x += STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x - STEP, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber] ,plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -321,7 +321,7 @@ function moveRight(activeNumber) {
             plates[activeNumber].x += STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x - STEP, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber] ,plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -336,7 +336,7 @@ function moveRight(activeNumber) {
             plates[activeNumber].x += STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x - STEP, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber] ,plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
         else if (platesInBox[empty_2.line][empty_2.column - 1] === activeNumber) {
@@ -349,7 +349,7 @@ function moveRight(activeNumber) {
             plates[activeNumber].x += STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x - STEP, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber] ,plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -364,7 +364,7 @@ function moveRight(activeNumber) {
             plates[activeNumber].x += STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x - STEP, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
         else if (platesInBox[empty_2.line][empty_2.column - 1] === activeNumber) {
@@ -377,7 +377,7 @@ function moveRight(activeNumber) {
             plates[activeNumber].x += STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x - STEP, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber] ,plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -404,7 +404,7 @@ function moveLeft(activeNumber) {
             plates[activeNumber].x -= STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x + STEP, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -423,7 +423,7 @@ function moveLeft(activeNumber) {
             plates[activeNumber].x -= STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x + STEP, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -438,7 +438,7 @@ function moveLeft(activeNumber) {
             plates[activeNumber].x -= STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x + STEP, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
         else if (platesInBox[empty_2.line][empty_2.column + 1] === activeNumber) {
@@ -451,7 +451,7 @@ function moveLeft(activeNumber) {
             plates[activeNumber].x -= STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x + STEP, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -466,7 +466,7 @@ function moveLeft(activeNumber) {
             plates[activeNumber].x -= STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x + STEP, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
         else if (platesInBox[empty_2.line][empty_2.column + 1] === activeNumber) {
@@ -479,7 +479,7 @@ function moveLeft(activeNumber) {
             plates[activeNumber].x -= STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x + STEP, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -502,7 +502,7 @@ function moveUp(activeNumber) {
             plates[activeNumber].y -= STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x, plates[activeNumber].y + STEP, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
         else if (platesInBox[empty_2.line + 1][empty_2.column] === activeNumber) {
@@ -515,7 +515,7 @@ function moveUp(activeNumber) {
             plates[activeNumber].y -= STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x, plates[activeNumber].y + STEP, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -534,7 +534,7 @@ function moveUp(activeNumber) {
             plates[activeNumber].y -= STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x, plates[activeNumber].y + STEP, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -553,7 +553,7 @@ function moveUp(activeNumber) {
             plates[activeNumber].y -= STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x, plates[activeNumber].y + STEP, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -568,7 +568,7 @@ function moveUp(activeNumber) {
             plates[activeNumber].y -= STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x, plates[activeNumber].y + STEP, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
         else if (platesInBox[empty_2.line + 1][empty_2.column] === activeNumber) {
@@ -581,7 +581,7 @@ function moveUp(activeNumber) {
             plates[activeNumber].y -= STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x, plates[activeNumber].y + STEP, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -603,7 +603,7 @@ function moveDown(activeNumber) {
             plates[activeNumber].y += STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x, plates[activeNumber].y - STEP, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
         else if (platesInBox[empty_2.line - 1][empty_2.column] === activeNumber) {
@@ -616,7 +616,7 @@ function moveDown(activeNumber) {
             plates[activeNumber].y += STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x, plates[activeNumber].y - STEP, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -635,7 +635,7 @@ function moveDown(activeNumber) {
             plates[activeNumber].y += STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x, plates[activeNumber].y - STEP, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -654,7 +654,7 @@ function moveDown(activeNumber) {
             plates[activeNumber].y += STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x, plates[activeNumber].y - STEP, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
@@ -669,7 +669,7 @@ function moveDown(activeNumber) {
             plates[activeNumber].y += STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x, plates[activeNumber].y - STEP, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
         else if (platesInBox[empty_2.line - 1][empty_2.column] === activeNumber) {
@@ -682,7 +682,7 @@ function moveDown(activeNumber) {
             plates[activeNumber].y += STEP;
             canvasContext.fillStyle = GAME.background;
             canvasContext.fillRect(plates[activeNumber].x, plates[activeNumber].y - STEP, plates[activeNumber].width, plates[activeNumber].height);
-            canvasContext.fillStyle = plates[activeNumber].color;
+            //canvasContext.fillStyle = plates[activeNumber].color;
             canvasContext.drawImage(textures[activeNumber], plates[activeNumber].x, plates[activeNumber].y, plates[activeNumber].width, plates[activeNumber].height);
         }
     }
