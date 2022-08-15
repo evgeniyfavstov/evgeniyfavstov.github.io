@@ -1,7 +1,7 @@
 var GAME = {
     width: 600,
     height: 750,
-    background: "F5F0E1",
+    background: "#F5F0E1",
     score: 0,
 }
 
@@ -18,7 +18,7 @@ canvasContext.fillRect(0 ,0 , GAME.width, GAME.height);
 
 
 var PLATE_0 = {
-    color: "550000",
+    color: "#550000",
     x: 0,
     y: 0,
     xStart: 0,
@@ -31,7 +31,7 @@ var PLATE_0 = {
 }
 
 var PLATE_1 = {
-    color: "660000",
+    color: "#660000",
     x: 0,
     y: 0,
     xStart: 0,
@@ -44,7 +44,7 @@ var PLATE_1 = {
 }
 
 var PLATE_2 = {
-    color: "007700",
+    color: "#007700",
     x: 150,
     y: 0,
     xStart: 150,
@@ -57,7 +57,7 @@ var PLATE_2 = {
 }
 
 var PLATE_3 = {
-    color: "880000",
+    color: "#880000",
     x: 450,
     y: 0,
     xStart: 450,
@@ -70,7 +70,7 @@ var PLATE_3 = {
 }
 
 var PLATE_4 = {
-    color: "990000",
+    color: "#990000",
     x: 0,
     y: 300,
     xStart: 0,
@@ -83,7 +83,7 @@ var PLATE_4 = {
 }
 
 var PLATE_5 = {
-    color: "AA0000",
+    color: "#AA0000",
     x: 150,
     y: 300,
     xStart: 150,
@@ -96,7 +96,7 @@ var PLATE_5 = {
 }
 
 var PLATE_6 = {
-    color: "BB0000",
+    color: "#BB0000",
     x: 450,
     y: 300,
     xStart: 450,
@@ -109,7 +109,7 @@ var PLATE_6 = {
 }
 
 var PLATE_7 = {
-    color: "0000CC",
+    color: "#0000CC",
     x: 150,
     y: 450,
     xStart: 150,
@@ -122,7 +122,7 @@ var PLATE_7 = {
 }
 
 var PLATE_8 = {
-    color: "00DD00",
+    color: "#00DD00",
     x: 300,
     y: 450,
     xStart: 300,
@@ -135,7 +135,7 @@ var PLATE_8 = {
 }
 
 var PLATE_9 = {
-    color: "00CCEE",
+    color: "#00CCEE",
     x: 0,
     y: 600,
     xStart: 0,
@@ -148,7 +148,7 @@ var PLATE_9 = {
 }
 
 var PLATE_10 = {
-    color: "FF00DD",
+    color: "#FF00DD",
     x: 450,
     y: 600,
     xStart: 450,
