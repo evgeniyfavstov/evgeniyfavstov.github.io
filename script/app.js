@@ -1,5 +1,5 @@
 var GAME = {
-    width: 600,
+    width: 1600,
     height: 750,
     background: "F5F0E1",
     score: 0,
@@ -7,6 +7,7 @@ var GAME = {
 
 const STEP = 150;
 var activeNumber = 0;
+var movesCount = 0;
 
 var canvas = document.getElementById("canvas");
 canvas.width = GAME.width;
@@ -15,6 +16,20 @@ var canvasContext = canvas.getContext("2d");
 
 canvasContext.fillStyle = "#F5F0E1";
 canvasContext.fillRect(0 ,0 , GAME.width, GAME.height);
+canvasContext.fillStyle = "#999999";
+canvasContext.fillRect(600 ,0 , GAME.width, GAME.height);
+
+canvasContext.fillStyle = "#FF0000";
+canvasContext.fillRect(690, 470, 800, 40);
+canvasContext.fillStyle = "#000000";
+canvasContext.font = "32px Arial";
+canvasContext.fillText("Mission: move donkey from top-center to bottom-center", 700, 50);
+canvasContext.fillText("Use digit keys to choose plates", 700, 100);
+canvasContext.fillText("Use arrow keys to move plates", 700, 150);
+canvasContext.fillText("No mouse", 700, 200);
+canvasContext.fillText("Try to win less than in 118 moves", 700, 250);
+canvasContext.fillText("You lose if you done 120+ moves", 700, 300);
+canvasContext.fillText("Moves done: " + movesCount, 700, 500);
 
 
 var PLATE_0 = {
@@ -722,26 +737,54 @@ function onCanvasKeyDown(event) {
     if (event.key === "ArrowLeft") {
         if (isMoveLeftCorrect(activeNumber)) {
             moveLeft(activeNumber);
+            movesCount += 1;
+            canvasContext.fillStyle = "#FF0000";
+            canvasContext.fillRect(690, 470, 800, 40);
+            canvasContext.fillStyle = "#000000";
+            canvasContext.font = "32px Arial";
+            canvasContext.fillText("Moves done: " + movesCount, 700, 500);
         }
     }
     if (event.key === "ArrowRight") {
         if (isMoveRightCorrect(activeNumber)) {
             moveRight(activeNumber);
+            movesCount += 1;
+            canvasContext.fillStyle = "#FF0000";
+            canvasContext.fillRect(690, 470, 800, 40);
+            canvasContext.fillStyle = "#000000";
+            canvasContext.font = "32px Arial";
+            canvasContext.fillText("Moves done: " + movesCount, 700, 500);
         }
     }
     if (event.key === "ArrowUp") {
         if (isMoveUpCorrect(activeNumber)) {
             moveUp(activeNumber);
+            movesCount += 1;
+            canvasContext.fillStyle = "#FF0000";
+            canvasContext.fillRect(690, 470, 800, 40);
+            canvasContext.fillStyle = "#000000";
+            canvasContext.font = "32px Arial";
+            canvasContext.fillText("Moves done: " + movesCount, 700, 500);
         }
     }
     if (event.key === "ArrowDown") {
         if (isMoveDownCorrect(activeNumber)) {
             moveDown(activeNumber);
+            movesCount += 1;
+            canvasContext.fillStyle = "#FF0000";
+            canvasContext.fillRect(690, 470, 800, 40);
+            canvasContext.fillStyle = "#000000";
+            canvasContext.font = "32px Arial";
+            canvasContext.fillText("Moves done: " + movesCount, 700, 500);
         }
     }
     if ((platesInBox[5][2] === 2) && (platesInBox[5][3] === 2)) {
         drawWinScreen();
     }
+    if (movesCount >=120) {
+        drawLoseScreen();
+    }
+
     console.log(platesInBox[5][1], platesInBox[5][2], platesInBox[5][3], platesInBox[5][4]);
 }
 
@@ -859,7 +902,7 @@ function drawWinScreen() {
     canvasContext.fillStyle = "#00FF00";
     canvasContext.font = "48px Arial";
     canvasContext.textAlign = "center";
-    canvasContext.fillText("VICTORY", GAME.width / 2, GAME.height / 2);
+    canvasContext.fillText("VICTORY IN " + movesCount + " MOVES", GAME.width / 2, GAME.height / 2);
 }
 
 function drawLoseScreen() {
@@ -868,7 +911,7 @@ function drawLoseScreen() {
     canvasContext.fillStyle = "#FF0000";
     canvasContext.font = "48px Arial";
     canvasContext.textAlign = "center";
-    canvasContext.fillText("TIME IS UP", GAME.width / 2, GAME.height / 2);
+    canvasContext.fillText("TOO MUCH MOVES", GAME.width / 2, GAME.height / 2);
 }
 
 function drawBackground() {
