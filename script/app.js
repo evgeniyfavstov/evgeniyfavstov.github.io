@@ -18,7 +18,7 @@ canvasContext.fillStyle = "#F5F0E1";
 canvasContext.fillRect(0 ,0 , GAME.width, GAME.height);
 canvasContext.fillStyle = "#999999";
 canvasContext.fillRect(600 ,0 , GAME.width, GAME.height);
-
+0
 canvasContext.fillStyle = "#FF0000";
 canvasContext.fillRect(690, 470, 800, 40);
 canvasContext.fillStyle = "#000000";
@@ -30,7 +30,7 @@ canvasContext.fillText("No mouse", 700, 200);
 canvasContext.fillText("Try to win less than in 118 moves", 700, 250);
 canvasContext.fillText("You lose if you done 120+ moves", 700, 300);
 canvasContext.fillText("Moves done: " + movesCount, 700, 500);
-
+canvasContext.fillStyle = "#F5F0E1";
 
 var PLATE_0 = {
     color: "#550000",
