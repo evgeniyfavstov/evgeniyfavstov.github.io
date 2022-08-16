@@ -30,6 +30,7 @@ canvasContext.fillText("No mouse", 700, 200);
 canvasContext.fillText("Try to win less than in 118 moves", 700, 250);
 canvasContext.fillText("You lose if you done 120+ moves", 700, 300);
 canvasContext.fillText("Moves done: " + movesCount, 700, 500);
+canvasContext.fillStyle = "#F5F0E1";
 
 
 var PLATE_0 = {
@@ -743,6 +744,7 @@ function onCanvasKeyDown(event) {
             canvasContext.fillStyle = "#000000";
             canvasContext.font = "32px Arial";
             canvasContext.fillText("Moves done: " + movesCount, 700, 500);
+            canvasContext.fillStyle = "#F5F0E1";
         }
     }
     if (event.key === "ArrowRight") {
@@ -754,6 +756,7 @@ function onCanvasKeyDown(event) {
             canvasContext.fillStyle = "#000000";
             canvasContext.font = "32px Arial";
             canvasContext.fillText("Moves done: " + movesCount, 700, 500);
+            canvasContext.fillStyle = "#F5F0E1";
         }
     }
     if (event.key === "ArrowUp") {
@@ -765,6 +768,7 @@ function onCanvasKeyDown(event) {
             canvasContext.fillStyle = "#000000";
             canvasContext.font = "32px Arial";
             canvasContext.fillText("Moves done: " + movesCount, 700, 500);
+            canvasContext.fillStyle = "#F5F0E1";
         }
     }
     if (event.key === "ArrowDown") {
@@ -776,6 +780,7 @@ function onCanvasKeyDown(event) {
             canvasContext.fillStyle = "#000000";
             canvasContext.font = "32px Arial";
             canvasContext.fillText("Moves done: " + movesCount, 700, 500);
+            canvasContext.fillStyle = "#F5F0E1";
         }
     }
     if ((platesInBox[5][2] === 2) && (platesInBox[5][3] === 2)) {
